@@ -11,12 +11,12 @@ const loadNewsCategory = () => {
 
 const displayNewsCategory = (catagories) => {
 
-  // console.log(catagories);
+  
 
   const categorydata = document.getElementById('category-list');
 
   catagories.forEach(category => {
-    // console.log(category.category_name); 
+    
 
     const list = document.createElement('div')
     list.innerHTML = `
@@ -170,7 +170,7 @@ const loader = isLoading => {
 // modal section 
 
 function showModal(title, image_url, name, published_date, img, view) {
-  // console.log(title,image_url);
+  
   const modalBody = document.getElementById("modal-box");
   modalBody.innerHTML = `
     
