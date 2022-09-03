@@ -11,12 +11,12 @@ const loadNewsCategory = () => {
 
 const displayNewsCategory = (catagories) => {
 
-  
+
 
   const categorydata = document.getElementById('category-list');
 
   catagories.forEach(category => {
-    
+
 
     const list = document.createElement('div')
     list.innerHTML = `
@@ -57,12 +57,6 @@ const loadNews = async (newsId) => {
 
 
 const displayNews = allNews => {
-
-
-
-
-
-
 
 
   // sorting 
@@ -136,15 +130,11 @@ const displayNews = allNews => {
   })
 
 
-
-
   // loader off 
 
   loader(false);
 
 }
-
-
 
 
 // Spinner toggle
@@ -160,17 +150,10 @@ const loader = isLoading => {
 }
 
 
-
-
-
-
-
-
-
 // modal section 
 
 function showModal(title, image_url, name, published_date, img, view) {
-  
+
   const modalBody = document.getElementById("modal-box");
   modalBody.innerHTML = `
     
@@ -195,8 +178,6 @@ function showModal(title, image_url, name, published_date, img, view) {
     <h5 class="modal-title" id="modal-title">${title}</h5>
     `;
 }
-
-
 
 
 
