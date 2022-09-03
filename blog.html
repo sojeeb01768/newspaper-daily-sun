@@ -48,4 +48,90 @@
         </section>
     </header>
 
+    <main>
+        <section class="container">
+            <div>
+                <h3>1. Differents between var, let, const ? </h3>
+                <div>
+                    <h5>Answer:</h5>
+
+
+                    <p>
+                        <span class="fw-bold">var keyword in JavaScript: </span>
+                        The var is the oldest keyword to declare a variable in JavaScript. <br>
+
+                        Example: Variable is declared globally. So, the scope of the variable is global, and it
+                        can be accessible everywhere in the program. <br>
+                        <span class="fw-bold">let keyword in JavaScript: </span>
+                        The let keyword is an improved version of the var keyword.
+
+                        The scope of let variable is only block scoped. It can’t be accessible outside the particular
+                        block ({block}). <br>
+
+                        <span class="fw-bold">const keyword in JavaScript: </span>
+                        const keyword in JavaScript: The const keyword has all the properties that are the same as the
+                        let
+                        keyword, except the user cannot update it.
+
+                        Scope: block scoped: When users declare a const variable, they need to initialize it, otherwise,
+                        it
+                        returns an error. The user cannot update the const variable once it is declared.
+
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <h3>2. Difference between arrow function and regular function ?</h3>
+                <h5>Answer:</h5>
+
+                <p>
+                    <span class="fw-bold">Arrow function</span> — also called fat arrow function— is a new feature
+                    introduced in ES6 that is a more concise syntax for writing function expressions. While both <span
+                        class="fw-bold">regular JavaScript</span> functions and arrow functions work in a similar
+                    manner, there are certain differences between them. <br>
+
+                    The arrow function  allows a developer to accomplish the same result with fewer lines
+                    of code and approximately half the typing.
+
+                    Curly brackets aren’t required if only one expression is present. <br>
+                    <span class="fw-bold"> Use of this keyword:</span>
+                    Unlike regular functions, arrow functions do not have their own this. The value of this inside an arrow function remains the same throughout the lifecycle of the function and is always bound to the value of this in the closest non-arrow parent function. <br>
+
+                    <span class="fw-bold">arguments object</span> inside the regular functions contains the list of arguments. The arrow function, on the opposite, doesn't define arguments (but you can easily access the arrow function arguments using a rest parameter ...args). <br>
+
+                    <span class="fw-bold">If the arrow</span> function has one expression, then the expression is returned implicitly, even without using the return keyword. but in <span class="fw-bold">regular function</span> you have to return. <br>
+
+                 
+
+
+                </p>
+            </div>
+            <div>
+                <h3>3. Differents between forEach, filter, map, find ?</h3>
+                <h5>Answer:</h5>
+                <p>
+                     <span class="fw-bold">Foreach</span>
+                      takes a callback function and run that callback function on each element of array one by one. <br>
+                      Basically forEach works as a traditional for loop looping over the array and providing you array elements to do operations on them. <br>
+
+                      <span class="fw-bold">filter</span> executes the callback and check its return value. If the value is true element remains in the resulting array but if the return value is false the element will be removed for the resulting array.Also take notice filter does not update the existing array it will return a new filtered array every time. <br>
+
+                      <span class="fw-bold">Map</span> like filter & foreach takes a callback and run it against every element on the array but whats makes it unique is it generate a new array based on your existing array.
+                      The provided callback to map modifies the array elements and save them into the new array upon completion that array get returned as the mapped array. <br>
+
+                      <span class="fw-bold">The find</span> () method returns the value of the first element that passes a test. The find() method executes a function for each array element. The find() method returns undefined if no elements are found. The find() method does not execute the function for empty elements.
+                </p>
+            </div>
+            <div>
+                <h3>why we use template string ?</h3>
+                <h5>Answer:</h5>
+
+
+                <p>
+                    <span class="fw-bold">Template strings</span> are a powerful feature of modern JavaScript released in ES6. It lets us insert/interpolate variables and expressions into strings without needing to concatenate like in older versions of JavaScript. It allows us to create strings that are complex and contain dynamic elements. Another great thing that comes with template strings are tags. Tags are functions that take a string and the decomposed parts of the string as parameters and are great for converting strings to different entities.
+                </p>
+            </div>
+        </section>
+    </main>
 </body>
