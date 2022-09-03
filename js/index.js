@@ -145,5 +145,60 @@ const displayNews = allNews => {
 }
 
 
+
+
+// Spinner toggle
+
+const loader = isLoading => {
+  const spinner = document.getElementById('spinner');
+  if (isLoading) {
+    spinner.classList.remove('d-none');
+  }
+  else {
+    spinner.classList.add('d-none')
+  }
+}
+
+
+
+
+
+
+
+
+
+// modal section 
+
+function showModal(title, image_url, name, published_date, img, view) {
+  // console.log(title,image_url);
+  const modalBody = document.getElementById("modal-box");
+  modalBody.innerHTML = `
+    
+    
+          <img class="img-fluid" src="${image_url}" alt="">
+          <div class="d-flex justify-content-between">
+          <div>
+          <img class="img-fluid mt-2 rounded-5" style="width:30px ; height:30px" src="${img}">
+          <span><span class="fw-bold">Author</span>: ${name}</span>
+          </div>
+          <p><i class="fa-solid fa-eye"></i>${view}M</p>
+
+         
+          </div>
+          <p class="mt-2 ms-4 "><span class="fw-bold">Publish</span>: ${published_date}</p>
+          
+          
+          
+    `;
+  const titleBox = document.getElementById('modal-title');
+  titleBox.innerHTML = `
+    <h5 class="modal-title" id="modal-title">${title}</h5>
+    `;
+}
+
+
+
+
+
 loadNews();
 loadNewsCategory();
